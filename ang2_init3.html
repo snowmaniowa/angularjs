@@ -5,7 +5,8 @@
 
 <div ng-app="" ng-init="tennisQuantity=25; tennisCost=100">
 
-    <p>Result: {{tennisQuantity*tennisCost}}</p>
+    <p>Result using expression: {{tennisQuantity*tennisCost}}</p>
+    <p>Result using bind: <span ng-bind="tennisQuantity*tennisCost"></span></p>
 
 </div>
 
