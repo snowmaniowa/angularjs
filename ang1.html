@@ -1,0 +1,24 @@
+<!-- 
+AngularJS is a JavaScript framework. It can be added to an HTML page with a <script> tag.
+AngularJS extends HTML attributes with Directives and binds data to HTML with Expressions.
+
+AngularJS extends HTML with ng-directives.
+
+ng-app directive defines an AngularJS application.
+ng-model directive binds the value of HTML controls (input, select, textarea) to application data.
+ng-bind directive binds application data to the HTML view.
+ng-init directive initializes AngularJS application variables.
+-->
+
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+
+<div ng-app="">
+  <p>Johnston zipcode: <input type="text" ng-model="zip"></p>
+  <p ng-bind="zip"></p>
+</div>
+
+</body>
+</html>
