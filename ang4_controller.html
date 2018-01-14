@@ -5,7 +5,6 @@ AngularJS controllers control AngularJS applications.
 ng-app directive defines the application
 ng-controller directive defines the controller.
 -->
-
 <!DOCTYPE html>
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
@@ -19,13 +18,12 @@ ng-controller directive defines the controller.
     <p>Full name is: {{firstName + " " + lastName}}</p>
 </div>
 
-
 <script>
 
-    //AngularJS modules define applications:
+    //AngularJS modules define applications
     var app = angular.module('myAppDirective', []);
 
-    //AngularJS controllers control applications:
+    //AngularJS controllers control applications
     app.controller('myControllerDirective', function($scope) {
         $scope.firstName= "Rahul";
         $scope.lastName= "Santharaam";
