@@ -6,8 +6,12 @@
 <!-- JSON / JavaScript object -->
 <div ng-app="" ng-init="person={name:'Rafael Nadal', age:'28'}">
 
-<p>Player name is: {{person.name}}</p>
-<p>Player age is: {{person.age}}</p>
+<p>Player name using expression is: {{person.name}}</p>
+<p>Player age using expression is: {{person.age}}</p>
+<br><br><br>
+
+<p>Player name using ng-bind is: <span ng-bind="person.name"></span></p>
+<p>Player age using ng-bind is: <span ng-bind="person.age"></span></p>
 
 </div>
 
